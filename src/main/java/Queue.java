@@ -15,6 +15,10 @@ public class Queue {
         return queue.size();
     }
 
+    public void enqueue(int n) {
+         queue.addLast(n);
+    }
+
     public static void main(String[] args) {
         System.out.println("hello");
     }
