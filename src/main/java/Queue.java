@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 public class Queue {
-    LinkedList<Integer> queue;
+    LinkedList queue;
 
     public Queue() {
         queue = new LinkedList();
@@ -19,12 +19,12 @@ public class Queue {
          queue.addLast(n);
     }
 
-    public int dequeue() {
-        return queue.remove(0);
+    public String dequeue() {
+        return (String) queue.remove(0);
     }
 
-    public int peek() {
-        return queue.get(0);
+    public String peek() {
+        return queue.get(0).toString();
     }
 
     public static void main(String[] args) {
@@ -36,7 +36,7 @@ public class Queue {
 
         System.out.println("Out: " + numberQueue.dequeue());
         System.out.println("Out: " + numberQueue.dequeue());
-        System.out.println("Out: " + numberQueue.dequeue());
+         System.out.println("Out: " + numberQueue.dequeue());
 
     }
 }
