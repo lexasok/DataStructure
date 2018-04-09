@@ -32,5 +32,8 @@ public class Queue {
         Stack stack = new Stack<String>();
         stack.push("first");
         stack.push("second ");
+
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
     }
 }
