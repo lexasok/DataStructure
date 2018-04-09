@@ -18,8 +18,15 @@ public class Solution {
         char[] chars = scan.nextLine().toCharArray();
         scan.close();
 
+        Solution solution = new Solution();
+        for (char aChar : chars) {
+            solution.pushCharacter(aChar);
+        }
 
 
+    }
 
+    private void pushCharacter(char aChar) {
+        stack.push(aChar);
     }
 }
