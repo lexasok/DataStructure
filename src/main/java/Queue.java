@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.Stack;
 
-public class Queue {
+public class Queue<S> {
     LinkedList queue;
 
     public Queue() {
@@ -35,5 +35,6 @@ public class Queue {
 
         System.out.println(stack.pop());
         System.out.println(stack.pop());
+
     }
 }
