@@ -37,7 +37,7 @@ public class Solution {
     }
 
     private char dequeueCharacter() {
-        return queue.getFirst();
+        return queue.remove(0);
     }
 
     private char popCharacter() {
