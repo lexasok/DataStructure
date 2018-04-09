@@ -1,8 +1,8 @@
 import java.util.LinkedList;
 import java.util.Stack;
 
-public class Queue<S> {
-    LinkedList queue;
+public class Queue {
+    LinkedList<Character> queue;
 
     public Queue() {
         queue = new LinkedList();
@@ -16,16 +16,16 @@ public class Queue<S> {
         return queue.size();
     }
 
-    public void enqueue(String n) {
+    public void enqueue(char n) {
          queue.addLast(n);
     }
 
-    public String dequeue() {
-        return (String) queue.remove(0);
+    public char dequeue() {
+        return queue.remove(0);
     }
 
-    public String peek() {
-        return queue.get(0).toString();
+    public char peek() {
+        return queue.get(0);
     }
 
     public static void main(String[] args) {
