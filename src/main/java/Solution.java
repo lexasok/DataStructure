@@ -6,11 +6,11 @@ import java.util.Stack;
 public class Solution {
 
     Stack<Character> stack;
-    Queue queue;
+    LinkedList<Character> queue;
 
     public Solution() {
         stack = new Stack<>();
-        queue = new Queue<>()
+        queue = new LinkedList<>();
     }
 
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class Solution {
         char[] chars = scan.nextLine().toCharArray();
         scan.close();
 
-        Solution solution = new Solution();
+
 
 
     }
