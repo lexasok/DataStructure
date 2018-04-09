@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class Queue {
     LinkedList queue;
@@ -28,13 +29,8 @@ public class Queue {
     }
 
     public static void main(String[] args) {
-        Queue stringQueue = new Queue();
-        stringQueue.enqueue("first");
-        stringQueue.enqueue("second");
-        stringQueue.enqueue("third");
-
-        System.out.println(stringQueue.dequeue());
-        System.out.println(stringQueue.dequeue());
-        System.out.println(stringQueue.dequeue());
+        Stack stack = new Stack<String>();
+        stack.push("first");
+        stack.push("second ");
     }
 }
