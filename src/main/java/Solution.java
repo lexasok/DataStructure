@@ -24,7 +24,20 @@ public class Solution {
             solution.enqueueCharacter(aChar);
         }
 
+        boolean isPalindrome = true;
+        for (int i = 0; i < chars.length/2; i++) {
+            if (solution.popCharacter() != solution.dequeueCharacter())
+        }
 
+
+    }
+
+    private char dequeueCharacter() {
+        return queue.getFirst();
+    }
+
+    private char popCharacter() {
+        return stack.pop();
     }
 
     private void enqueueCharacter(char aChar) {
