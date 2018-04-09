@@ -28,7 +28,13 @@ public class Queue {
     }
 
     public static void main(String[] args) {
+        Queue stringQueue = new Queue();
+        stringQueue.enqueue("first");
+        stringQueue.enqueue("second");
+        stringQueue.enqueue("third");
 
-
+        System.out.println(stringQueue.dequeue());
+        System.out.println(stringQueue.dequeue());
+        System.out.println(stringQueue.dequeue());
     }
 }
