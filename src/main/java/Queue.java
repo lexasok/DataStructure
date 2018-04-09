@@ -15,7 +15,7 @@ public class Queue {
         return queue.size();
     }
 
-    public void enqueue(int n) {
+    public void enqueue(String n) {
          queue.addLast(n);
     }
 
@@ -28,15 +28,7 @@ public class Queue {
     }
 
     public static void main(String[] args) {
-        System.out.println("hello");
-        Queue numberQueue = new Queue();
-        numberQueue.enqueue(5);
-        numberQueue.enqueue(7);
-        numberQueue.enqueue(6);
 
-        System.out.println("Out: " + numberQueue.dequeue());
-        System.out.println("Out: " + numberQueue.dequeue());
-         System.out.println("Out: " + numberQueue.dequeue());
 
     }
 }
