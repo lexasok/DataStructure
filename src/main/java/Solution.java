@@ -21,9 +21,14 @@ public class Solution {
         Solution solution = new Solution();
         for (char aChar : chars) {
             solution.pushCharacter(aChar);
+            solution.enqueueCharacter(aChar);
         }
 
 
+    }
+
+    private void enqueueCharacter(char aChar) {
+        queue.addLast(aChar);
     }
 
     private void pushCharacter(char aChar) {
